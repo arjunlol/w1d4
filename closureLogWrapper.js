@@ -1,5 +1,9 @@
 var wrapLog = function (callback, name) {
   /* your code here */
+  return function (a,b) {
+    var total = sum(a,b);
+    console.log(name + "("+ a+ "," + b + ") =>" + total);
+  }
 };
 
 var sum = function (a,b) { return a + b; };
